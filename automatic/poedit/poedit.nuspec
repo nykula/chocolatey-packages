@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>poedit</id>
+    <version>3.8</version>
+    <title>Poedit</title>
+    <authors>Vaclav Slavik</authors>
+    <owners>Denys Nykula</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/vslavik/poedit/blob/master/COPYING</licenseUrl>
+    <projectUrl>https://poedit.net</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/vslavik/poedit/master/artwork/linux/appicon/512x512/apps/net.poedit.Poedit.png</iconUrl>
+    <description>Easy translation of apps and sites with PO, XLIFF, JSON, Qt or Flutter formats. Full gettext support (Drupal, WordPress, Django, GNU). Translation memory, safety checks, minimal interface. Support for Crowdin and Localazy cloud localization platforms.</description>
+    <summary>Powerful and intuitive translation editor</summary>
+    <releaseNotes>https://github.com/vslavik/poedit/releases</releaseNotes>
+    <copyright>Vaclav Slavik</copyright>
+    <tags>poedit gettext i18n l10n language translation</tags>
+    <projectSourceUrl>https://github.com/vslavik/poedit</projectSourceUrl>
+    <docsUrl>https://poedit.net/docs/</docsUrl>
+    <bugTrackerUrl>https://github.com/vslavik/poedit/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/nykula/chocolatey-packages</packageSourceUrl>
+  </metadata>
+</package>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>gettext</id>
+    <version>1.0</version>
+    <title>GNU gettext (Install)</title>
+    <authors>Free Software Foundation, Michele Locati</authors>
+    <owners>Denys Nykula</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://gitweb.git.savannah.gnu.org/gitweb/?p=gettext.git;a=blob_plain;f=COPYING;hb=HEAD</licenseUrl>
+    <projectUrl>https://github.com/mlocati/gettext-iconv-windows</projectUrl>
+    <description>Internationalization and localization (i18n and l10n) system for writing multilingual programs. Extracts strings from source code, such as a Django application. Supports different pluralization rules for each language.</description>
+    <summary>Separates programming from translating</summary>
+    <copyright>2026 Free Software Foundation</copyright>
+    <tags>gettext i18n l10n translation plural gnu xgettext msginit msgfmt msgmerge msguniq django</tags>
+    <projectSourceUrl>https://gitweb.git.savannah.gnu.org/gitweb/?p=gettext.git;a=tree</projectSourceUrl>
+    <docsUrl>https://github.com/mlocati/gettext-iconv-windows</docsUrl>
+    <mailingListUrl>https://lists.gnu.org/mailman/listinfo/bug-gettext</mailingListUrl>
+    <bugTrackerUrl>https://savannah.gnu.org/bugs/?group=gettext</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/nykula/chocolatey-packages</packageSourceUrl>
+  </metadata>
+</package>
