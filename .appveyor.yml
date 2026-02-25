@@ -17,7 +17,7 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: nykula/chocolatey-packages
   github_api_key:
     secure: 0kg9KCfKzKkntCe5GtMcTcoZPdvOPWTbAbg0k2BqY7+mvGcCEq2fjNTgeG45aKnq #https://ci.appveyor.com/tools/encrypt
 
