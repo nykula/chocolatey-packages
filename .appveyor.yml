@@ -19,28 +19,28 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: {github_user}/{repository}
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: 0kg9KCfKzKkntCe5GtMcTcoZPdvOPWTbAbg0k2BqY7+mvGcCEq2fjNTgeG45aKnq #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: zT3iFQBDSR5Nzb/K1sKskA== #https://ci.appveyor.com/tools/encrypt
   mail_pass:
-    secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
-  mail_server: smtp.gmail.com
+    secure: N43d38D/scnXRwlntsruSA== #https://ci.appveyor.com/tools/encrypt
+  mail_server: mail.envs.net
   mail_port: 587
   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: 86e3f2b292bd73555a13426c88addbef
 
   # Force test: gist id for test results
   gist_id_test:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: YVa59M7zF3YMTQr3/rXJQBmFLm6joUBbm3XlMIBPa/M/VsmXm1Qk2RH9A2OzI5Kh # https://ci.appveyor.com/tools/encrypt
 
   #Chocolatey version we want to use when checking for updates (usually latest).
   choco_version: '2.2.2'
