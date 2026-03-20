@@ -8,7 +8,15 @@ function global:au_GetLatest {
     $re  = "gettext.+shared-(32|64).exe"
     $url = $download_page.links | ? href -match $re | select -First 2 -expand href
 
-    $version = "$($url[0] -split '/' |select -Last 2 |select -First 1)" -replace 'v' -split '-' |select -First 1
+    # https://github.com/mlocati/gettext-iconv-windows/issues/81#issuecomment-4099697274
+    $date = ($download_page.ParsedHtml.GetElementsByTagName('relative-time') | select -First 1).GetAttribute("datetime") -split 'T' | select -First 1
+    $version = ($url[0] -split '/' | select -Last 2 | select -First 1) -replace 'v' -split '-' | select -First 1
+    $version = ($version -split '\.' | select -First 3) -join '.'
+    if ( ($version -split '\.').Count -lt 3 ) {
+        $version = $version + '.0'
+    }
+    $version = $version + '.' + ($date -replace '-')
+
     $url32 = 'https://github.com' + $url[0]
     $url64 = 'https://github.com' + $url[1]
 
