@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'poedit'
-$url         = 'https://download.poedit.net/Poedit-3.8-setup.exe'
-$checksum    = '5910fc282e736651ab122a34b1e9b393c4cafae3386b556460749347b4e57e6d'
+$url         = 'https://download.poedit.net/Poedit-3.9-setup.exe'
+$checksum    = '1caab38e20b395b965fef5024faa4c15c4997fd7347b6de64ecf2dfcab3a0165'
 
 $packageArgs = @{
   packageName    = $packageName

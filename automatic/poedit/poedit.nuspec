@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>poedit</id>
-    <version>3.8</version>
+    <version>3.9</version>
     <title>Poedit</title>
     <authors>Vaclav Slavik</authors>
     <owners>Denys Nykula</owners>
