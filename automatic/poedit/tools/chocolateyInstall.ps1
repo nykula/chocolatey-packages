@@ -16,4 +16,5 @@ $packageArgs = @{
   silentArgs     = '/verysilent /norestart'
   validExitCodes = @(0)
 }
+Confirm-Win10
 Install-ChocolateyPackage @packageArgs

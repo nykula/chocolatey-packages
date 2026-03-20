@@ -16,6 +16,9 @@
     <releaseNotes>https://github.com/vslavik/poedit/releases</releaseNotes>
     <copyright>Vaclav Slavik</copyright>
     <tags>poedit gettext i18n l10n language translation</tags>
+    <dependencies>
+      <dependency id="chocolatey-os-dependency.extension" version="0.0.1" />
+    </dependencies>
     <projectSourceUrl>https://github.com/vslavik/poedit</projectSourceUrl>
     <docsUrl>https://poedit.net/docs/</docsUrl>
     <bugTrackerUrl>https://github.com/vslavik/poedit/issues</bugTrackerUrl>
