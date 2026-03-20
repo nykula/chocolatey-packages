@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gettext</id>
-    <version>1.0</version>
+    <version>1.0.0.20260310</version>
     <title>GNU gettext (Install)</title>
     <authors>Free Software Foundation, Michele Locati</authors>
     <owners>Denys Nykula</owners>

@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'gettext'
-$url32       = 'https://github.com/mlocati/gettext-iconv-windows/releases/download/v1.0-v1.18-r3/gettext1.0-iconv1.18-shared-32.exe'
-$url64       = 'https://github.com/mlocati/gettext-iconv-windows/releases/download/v1.0-v1.18-r3/gettext1.0-iconv1.18-shared-64.exe'
-$checksum32  = 'ed23c5dae0ab82e88db49d37368e5a093d34d8b069597357e7ccff403cc4e48f'
-$checksum64  = '09d435ae5d371e46e4e8bc6b7d228d5b0f9276788824f568ec7d896c76a2e93b'
+$url32       = 'https://github.com/mlocati/gettext-iconv-windows/releases/download/v1.0-v1.19/gettext1.0-iconv1.19-shared-32.exe'
+$url64       = 'https://github.com/mlocati/gettext-iconv-windows/releases/download/v1.0-v1.19/gettext1.0-iconv1.19-shared-64.exe'
+$checksum32  = '6fff825bf31aa1f81e62501f1db8298224ebca22db15501e968659c7579e9ac9'
+$checksum64  = '243afedc0cd748f1fac5d94c4be66a3f20280b49eeede892d93e08ca16218733'
 
 $packageArgs = @{
   packageName    = $packageName
