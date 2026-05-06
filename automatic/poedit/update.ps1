@@ -3,7 +3,7 @@ import-module chocolatey-au
 $releases = 'https://poedit.net/download'
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $re  = "Poedit-.+-setup.exe"
     $url = $download_page.links | ? href -match $re | select -First 2 -expand href

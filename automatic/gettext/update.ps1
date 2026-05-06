@@ -3,7 +3,7 @@ import-module chocolatey-au
 $releases = 'https://github.com/mlocati/gettext-iconv-windows/releases'
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $re  = "gettext.+shared-(32|64).exe"
     $url = $download_page.links | ? href -match $re | select -First 2 -expand href
