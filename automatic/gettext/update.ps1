@@ -1,27 +1,23 @@
 import-module chocolatey-au
 
-$releases = 'https://github.com/mlocati/gettext-iconv-windows/releases'
-
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-    $re  = "gettext.+shared-(32|64).exe"
-    $url = $download_page.links | ? href -match $re | select -First 2 -expand href
+    $LatestRelease = Invoke-RestMethod -UseBasicParsing -Uri "https://api.github.com/repos/mlocati/gettext-iconv-windows/releases/latest"
 
     # https://github.com/mlocati/gettext-iconv-windows/issues/81#issuecomment-4099697274
-    $date = ($download_page.ParsedHtml.GetElementsByTagName('relative-time') | select -First 1).GetAttribute("datetime") -split 'T' | select -First 1
-    $version = ($url[0] -split '/' | select -Last 2 | select -First 1) -replace 'v' -split '-' | select -First 1
+    $date = $LatestRelease.published_at -split 'T' | select -First 1
+    $version = $LatestRelease.tag_name -replace 'v' -split '-' | select -First 1
     $version = ($version -split '\.' | select -First 3) -join '.'
     if ( ($version -split '\.').Count -lt 3 ) {
         $version = $version + '.0'
     }
     $version = $version + '.' + ($date -replace '-')
 
-    $url32 = 'https://github.com' + $url[0]
-    $url64 = 'https://github.com' + $url[1]
-
-    $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
-    return $Latest
+    @{
+        URL32 = ($LatestRelease.assets | Where-Object {$_.name.EndsWith("shared-32.exe")}).browser_download_url
+        URL64 = ($LatestRelease.assets | Where-Object {$_.name.EndsWith("shared-64.exe")}).browser_download_url
+        Version = $version
+        ReleaseNotes = $LatestRelease.html_url
+    }
 }
 
 function global:au_SearchReplace {
