@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>servo</id>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
     <title>Servo Tech Demo (Install)</title>
     <authors>The Servo Project Developers</authors>
     <owners>Denys Nykula</owners>
@@ -19,4 +19,7 @@
     <bugTrackerUrl>https://github.com/servo/servo/issues</bugTrackerUrl>
     <packageSourceUrl>https://github.com/nykula/chocolatey-packages</packageSourceUrl>
   </metadata>
+  <files>
+    <file src="**" exclude="update.ps1" />
+  </files>
 </package>
