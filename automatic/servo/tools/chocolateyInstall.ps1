@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'servo'
-$url64       = 'https://github.com/servo/servo/releases/download/v0.4.0/servo-x86_64-windows-msvc.exe'
-$checksum64  = 'f93c40ae164db5003848a7a2fa59afa0147228de9213610f54d9701c4ef4239e'
+$url64       = 'https://github.com/servo/servo/releases/download/v0.5.0/servo-x86_64-windows-msvc.exe'
+$checksum64  = 'd6710bf1caf987bc296ea73c1c5351c4b3a146cc3132cee8845b28146e41496f'
 
 $packageArgs = @{
   packageName    = $packageName
